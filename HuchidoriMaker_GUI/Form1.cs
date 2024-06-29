@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace HuchidoriMaker_GUI
 {
     public partial class Form1 : Form
     {
-        [DllImport("HuchidoriDll.dll", EntryPoint = "manager")]
+        [DllImport("C:\\Users\\sukai\\Documents\\HuchidoriMakerGUI\\HuchidoriDll\\HuchidoriDll.dll", EntryPoint = "manager")]
         static extern void manager(StringBuilder result, string input, string output, byte red, byte green, byte blue); //DLLì‡Ç≈íËã`Ç≥ÇÍÇΩä÷êî
 
         private string input = "";
